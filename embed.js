@@ -20,7 +20,7 @@
   button.onclick = function () {
     const msg = encodeURIComponent(config.prefillMessage || "");
     const url = `https://wa.me/${phone}?text=${msg}`;
-    window.open(url, "_blank");
+    window.location.href = url;
   };
 
   document.body.appendChild(button);
